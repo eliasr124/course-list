@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Install @angular/cli
-install angular/cli " apt install @angular/cli"
+install angular/cli " npm install @angular/cli"
 
 ## Development server
 
