@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
+import { Error404Component } from "./component/error_404/error_404.component";
 import { NavBarComponent } from "./component/nav-bar/nav-bar.component";
 
 @NgModule({
@@ -7,7 +8,11 @@ import { NavBarComponent } from "./component/nav-bar/nav-bar.component";
         NavBarComponent
     ],
     imports:[
-        RouterModule
+        RouterModule.forChild([
+            {
+                path: '**', component: Error404Component
+            }
+        ])
     ],
     exports: [
         NavBarComponent,
